@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4F5CEAF-9298-4BB0-BAEC-36F4BE07696F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44321</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Images\Accordion\1.png" />
+    <Content Include="Images\Accordion\10.png" />
+    <Content Include="Images\Accordion\11.png" />
+    <Content Include="Images\Accordion\12.png" />
+    <Content Include="Images\Accordion\13.png" />
+    <Content Include="Images\Accordion\14.png" />
+    <Content Include="Images\Accordion\15.png" />
+    <Content Include="Images\Accordion\2.png" />
+    <Content Include="Images\Accordion\3.png" />
+    <Content Include="Images\Accordion\4.png" />
+    <Content Include="Images\Accordion\5.png" />
+    <Content Include="Images\Accordion\6.png" />
+    <Content Include="Images\Accordion\7.png" />
+    <Content Include="Images\Accordion\8.png" />
+    <Content Include="Images\Accordion\9.png" />
+    <Content Include="Images\common\31.png" />
+    <Content Include="Images\common\51.png" />
+    <Content Include="Images\common\arrow.png" />
+    <Content Include="Images\common\Certificates.png" />
+    <Content Include="Images\common\component.png" />
+    <Content Include="Images\common\contract.png" />
+    <Content Include="Images\common\contractRenewal.png" />
+    <Content Include="Images\common\Planned.png" />
+    <Content Include="Images\common\pr.png" />
+    <Content Include="Images\common\te_notes.png" />
+    <Content Include="Images\common\vendor-detail.png" />
+    <Content Include="Images\crew\CrewChanges&amp;Approval\CrewChanges&amp;Approval_Black.png" />
+    <Content Include="Images\crew\CrewChanges&amp;Approval\CrewChanges&amp;Approval_Blue.png" />
+    <Content Include="Images\crew\CrewChanges&amp;Approval\CrewChanges&amp;Approval_Green.png" />
+    <Content Include="Images\crew\CrewChanges&amp;Approval\CrewChanges&amp;Approval_Red.png" />
+    <Content Include="Images\crew\CrewChanges&amp;Approval\CrewChanges&amp;Approval_Yellow.png" />
+    <Content Include="Images\crew\Manning&amp;Documents\Manning&amp;Documents_Black.png" />
+    <Content Include="Images\crew\Manning&amp;Documents\Manning&amp;Documents_Blue.png" />
+    <Content Include="Images\crew\Manning&amp;Documents\Manning&amp;Documents_Green.png" />
+    <Content Include="Images\crew\Manning&amp;Documents\Manning&amp;Documents_Red.png" />
+    <Content Include="Images\crew\Manning&amp;Documents\Manning&amp;Documents_Yellow.png" />
+    <Content Include="Images\crew\OpenReports&amp;Complaints\OpenReports&amp;Complaints_Black.png" />
+    <Content Include="Images\crew\OpenReports&amp;Complaints\OpenReports&amp;Complaints_Blue.png" />
+    <Content Include="Images\crew\OpenReports&amp;Complaints\OpenReports&amp;Complaints_Green.png" />
+    <Content Include="Images\crew\OpenReports&amp;Complaints\OpenReports&amp;Complaints_Red.png" />
+    <Content Include="Images\crew\OpenReports&amp;Complaints\OpenReports&amp;Complaints_Yellow.png" />
+    <Content Include="Images\esm\esmlogo.png" />
+    <Content Include="Images\hseqa\AuditsInspection\AuditsandInspection_Black.png" />
+    <Content Include="Images\hseqa\AuditsInspection\AuditsandInspection_Blue.png" />
+    <Content Include="Images\hseqa\AuditsInspection\AuditsandInspection_Green.png" />
+    <Content Include="Images\hseqa\AuditsInspection\AuditsandInspection_Red.png" />
+    <Content Include="Images\hseqa\AuditsInspection\AuditsandInspection_Yellow.png" />
+    <Content Include="Images\hseqa\Drills\Drills_Black.png" />
+    <Content Include="Images\hseqa\Drills\Drills_Blue.png" />
+    <Content Include="Images\hseqa\Drills\Drills_Green.png" />
+    <Content Include="Images\hseqa\Drills\Drills_Red.png" />
+    <Content Include="Images\hseqa\Drills\Drills_Yellow.png" />
+    <Content Include="Images\hseqa\Incidents\Incidents_Black.png" />
+    <Content Include="Images\hseqa\Incidents\Incidents_Blue.png" />
+    <Content Include="Images\hseqa\Incidents\Incidents_Green.png" />
+    <Content Include="Images\hseqa\Incidents\Incidents_Red.png" />
+    <Content Include="Images\hseqa\Incidents\Incidents_Yellow.png" />
+    <Content Include="Images\hseqa\RiskMOC\Risk&amp;MOC_Black.png" />
+    <Content Include="Images\hseqa\RiskMOC\Risk&amp;MOC_Blue.png" />
+    <Content Include="Images\hseqa\RiskMOC\Risk&amp;MOC_Green.png" />
+    <Content Include="Images\hseqa\RiskMOC\Risk&amp;MOC_Red.png" />
+    <Content Include="Images\hseqa\RiskMOC\Risk&amp;MOC_Yellow.png" />
+    <Content Include="Images\landingIcons\Accounts.png" />
+    <Content Include="Images\landingIcons\AccountsT.png" />
+    <Content Include="Images\landingIcons\Analytics.png" />
+    <Content Include="Images\landingIcons\Crew.png" />
+    <Content Include="Images\landingIcons\ESM_Logo.png" />
+    <Content Include="Images\landingIcons\File.png" />
+    <Content Include="Images\landingIcons\HRMS.png" />
+    <Content Include="Images\landingIcons\HRMST.png" />
+    <Content Include="Images\landingIcons\HSEQA.png" />
+    <Content Include="Images\landingIcons\HSEQAT.png" />
+    <Content Include="Images\landingIcons\Log-Out.png" />
+    <Content Include="Images\landingIcons\My-Vessel.png" />
+    <Content Include="Images\landingIcons\News-Bullet.jpeg" />
+    <Content Include="Images\landingIcons\Operation.png" />
+    <Content Include="Images\landingIcons\OperationT.png" />
+    <Content Include="Images\landingIcons\Settings.png" />
+    <Content Include="Images\landingIcons\SNSS_Logo.png" />
+    <Content Include="Images\operation\Cargo\Cargo_Black.png" />
+    <Content Include="Images\operation\Cargo\Cargo_Blue.png" />
+    <Content Include="Images\operation\Cargo\Cargo_Green.png" />
+    <Content Include="Images\operation\Cargo\Cargo_Red.png" />
+    <Content Include="Images\operation\Cargo\Cargo_Yellow.png" />
+    <Content Include="Images\operation\Others\Others_Black.png" />
+    <Content Include="Images\operation\Others\Others_Blue.png" />
+    <Content Include="Images\operation\Others\Others_Green.png" />
+    <Content Include="Images\operation\Others\Others_Red.png" />
+    <Content Include="Images\operation\Others\Others_Yellow.png" />
+    <Content Include="Images\operation\PSCVetting\PSC&amp;Vetting_Black.png" />
+    <Content Include="Images\operation\PSCVetting\PSC&amp;Vetting_Blue.png" />
+    <Content Include="Images\operation\PSCVetting\PSC&amp;Vetting_Green.png" />
+    <Content Include="Images\operation\PSCVetting\PSC&amp;Vetting_Red.png" />
+    <Content Include="Images\operation\PSCVetting\PSC&amp;Vetting_Yellow.png" />
+    <Content Include="Images\operation\TradingArea\TradingAreaWx_Black.png" />
+    <Content Include="Images\operation\TradingArea\TradingAreaWx_Blue.png" />
+    <Content Include="Images\operation\TradingArea\TradingAreaWx_Green.png" />
+    <Content Include="Images\operation\TradingArea\TradingAreaWx_Red.png" />
+    <Content Include="Images\operation\TradingArea\TradingAreaWx_Yellow.png" />
+    <Content Include="Images\technical\Certificates\CertsSurveys_Black.png" />
+    <Content Include="Images\technical\Certificates\CertsSurveys_Blue.png" />
+    <Content Include="Images\technical\Certificates\CertsSurveys_Green.png" />
+    <Content Include="Images\technical\Certificates\CertsSurveys_Red.png" />
+    <Content Include="Images\technical\Certificates\CertsSurveys_Yellow.png" />
+    <Content Include="Images\technical\PMS\PMS_Black.png" />
+    <Content Include="Images\technical\PMS\PMS_Blue.png" />
+    <Content Include="Images\technical\PMS\PMS_Green.png" />
+    <Content Include="Images\technical\PMS\PMS_Red.png" />
+    <Content Include="Images\technical\PMS\PMS_Yellow.png" />
+    <Content Include="Images\technical\Purchase\Purchase_Black.png" />
+    <Content Include="Images\technical\Purchase\Purchase_Blue.png" />
+    <Content Include="Images\technical\Purchase\Purchase_Green.png" />
+    <Content Include="Images\technical\Purchase\Purchase_Red.png" />
+    <Content Include="Images\technical\Purchase\Purchase_Yellow.png" />
+    <Content Include="Images\technical\VesselPerformance\VesselPerformance_Black.png" />
+    <Content Include="Images\technical\VesselPerformance\VesselPerformance_Blue.png" />
+    <Content Include="Images\technical\VesselPerformance\VesselPerformance_Green.png" />
+    <Content Include="Images\technical\VesselPerformance\VesselPerformance_Red.png" />
+    <Content Include="Images\technical\VesselPerformance\VesselPerformance_Yellow.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\PhoenixWebAPIConfig.cs" />
+    <Compile Include="Controller\PhoenixController.cs" />
+    <Compile Include="Model\ActionIcons.cs" />
+    <Compile Include="Model\CategoryMenuItem.cs" />
+    <Compile Include="Model\CategoryModel.cs" />
+    <Compile Include="Model\DashboardPanel.cs" />
+    <Compile Include="Model\EmailModel.cs" />
+    <Compile Include="Model\MobilePhoenixUserModel.cs" />
+    <Compile Include="Model\PanelModel.cs" />
+    <Compile Include="Model\PhoenixMobileActionDashboardModel.cs" />
+    <Compile Include="Model\SubCategoryModel.cs" />
+    <Compile Include="Model\VesselDetails.cs" />
+    <Compile Include="Model\VesselModel.cs" />
+    <Compile Include="Translators\PanelTranslator.cs" />
+    <Compile Include="Translators\PhoenixMobileActionDashboardTranslator.cs" />
+    <Compile Include="Translators\PhoenixMobileActionTranslator.cs" />
+    <Compile Include="Translators\PhoenixMobileKeyDetailVesselTranslator.cs" />
+    <Compile Include="Translators\PhoenixMobileDashboardPanelTranslator.cs" />
+    <Compile Include="Translators\PhoenixMobileUserContextTranslator.cs" />
+    <Compile Include="Translators\PhoenixMobileUserTranslator.cs" />
+    <Compile Include="Translators\PhoenixMobileVesselTranslator.cs" />
+    <Compile Include="Translators\SendEmailTranslator.cs" />
+    <Compile Include="Utility\dataaccess.cs" />
+    <Compile Include="Utility\dataaccess2.cs" />
+    <Compile Include="Utility\dataaccess3.cs" />
+    <Compile Include="Utility\dataaccess4.cs" />
+    <Compile Include="Utility\dbconstant.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Message.cs" />
+    <Compile Include="Model\MobileUsersModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\general.cs" />
+    <Compile Include="Utility\spcollectionitem.cs" />
+    <Compile Include="Utility\txndataaccess.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53321</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44321/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
